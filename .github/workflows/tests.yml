@@ -20,15 +20,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2 # ✅ Actualiza a versión más reciente
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.2.0 # ✅ Actualiza a versión más reciente
         with:
           python-version: "3.11"
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.1.0 # ✅ Actualiza a versión más reciente
         with:
           node-version: "24"
 
@@ -43,7 +43,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload Allure results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.4.3 # ✅ Actualiza a versión más reciente
         if: always()
         with:
           name: allure-results
