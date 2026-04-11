@@ -10,6 +10,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    # ✅ Agregar permisos necesarios
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: read
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
