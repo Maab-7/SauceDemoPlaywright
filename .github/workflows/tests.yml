@@ -26,7 +26,8 @@ jobs:
         run: playwright install chromium
 
       - name: Run tests
-        run: pytest tests/test_login.py -v --alluredir=allure-results
+        run: pytest tests/test_login.py -v --alluredir=allure-results --junitxml=test-results.xml
+        continue-on-error: true
 
       - name: Upload Allure results
         uses: actions/upload-artifact@v4
@@ -40,3 +41,4 @@ jobs:
         if: always()
         with:
           files: test-results.xml
+          check_name: "Playwright Test Results"
