@@ -472,7 +472,7 @@ Contributions welcome! Please:
 
 ## 👤 Author
 
-**Marco Aguirre** | QA Automation Engineer  
+**Marco Alfaro** | QA Automation Engineer  
 🐙 GitHub: [@Maab-7](https://github.com/Maab-7)
 
 ---
